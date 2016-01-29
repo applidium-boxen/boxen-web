@@ -131,7 +131,7 @@ if [[ $CLT_VERSION =~ ^5\.1\.0\.0\.1\.1396320587 ]]; then
   export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 fi
 
-script/boxen --token <%= view.access_token %> --login <%= view.login %>
+script/boxen --no-fde --token <%= view.access_token %> --login <%= view.login %>
 
 cd $HOME
 
